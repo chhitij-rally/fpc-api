@@ -1,17 +1,14 @@
 package models
 
-import java.sql.Timestamp
-
 import formatters.TimestampFormatter
 import play.api.libs.json._
 
 case class User(id: Long,
+                firstName: String,
+                lastName: String,
                 email: String,
-                password: String,
-                apiKey: String,
-                createdAt: Timestamp,
-                updatedAt: Timestamp)
+                designation: String)
 
 object User extends TimestampFormatter {
-  implicit val userFormat = Json.format[User]
+  implicit val userFormat: Format[User] = Json.format[User]
 }

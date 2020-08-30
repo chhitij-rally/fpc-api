@@ -1,4 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/phani/Repo/phanitumuluri-rally/fpc/fpc-api/app/models/User.scala:15:40: No instance of play.api.libs.json.Format is available for java.sql.Timestamp, java.sql.Timestamp in the implicit scope (Hint: if declared in the same file, make sure it's declared before)[0m
-[0m[[0m[31merror[0m] [0m[0m  implicit val userFormat = Json.format[User][0m
-[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/phani/Repo/phanitumuluri-rally/fpc/fpc-api/app/database/dao/DoctorDao.scala:28:140: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[models.Speciality][0m
+[0m[[0m[31merror[0m] [0m[0m required: Seq[models.Speciality][0m
+[0m[[0m[31merror[0m] [0m[0m    query.result.map(_.map(userWithAddress => UserWithAddresses(userWithAddress._1._1.toUser, userWithAddress._1._2, userWithAddress._2.map(_._2))))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                           ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

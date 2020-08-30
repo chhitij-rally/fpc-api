@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/phani/Repo/phanitumuluri-rally/fpc/fpc-api/conf/routes
-// @DATE:Sat Aug 29 09:37:58 IST 2020
+// @DATE:Sun Aug 30 21:51:30 IST 2020
 
 
 package router {
