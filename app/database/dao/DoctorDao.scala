@@ -24,7 +24,7 @@ class DoctorDao @Inject() (dbConfigProvider: DatabaseConfigProvider) (implicit e
       .joinLeft(addressTable).on(_.id === _.userId)
 //      .joinLeft(doctorSpecialityTable.join(specialityTable).on(_.specialityId === _.id)).on(_._1.id === _._2.id)
 
-    query.result.statements.foreach(println)
+    // query.result.statements.foreach(println)
     query.result.map(_.map(userWithAddress => UserWithAddresses(userWithAddress._1.toUser, userWithAddress._2)))
   }
 

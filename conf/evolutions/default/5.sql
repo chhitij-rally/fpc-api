@@ -10,18 +10,18 @@ create table "services" (
   "updated_at" timestamp default current_timestamp
 );
 
-INSERT INTO services(id, service, doctor_id, minimum_cost, maximum_cost)
-	VALUES (1, 'Services Office Visit - Primary Doctor - Established Patient - High Complexity', 2, 302, 377),
-	(2, 'Office Visit - Primary Doctor - Established Patient - Minimal Complexity', 2, 42, 52),
-	(3, 'Office Visit - Primary Doctor - Established Patient - Moderate Complexity', 2, 145, 188),
-	(4, 'Office Visit - Primary Doctor - New Patient - High Complexity', 2, 420, 550),
-	(5, 'Services Office Visit - Primary Doctor - Established Patient - High Complexity', 3, 302, 377),
-    (6, 'Office Visit - Primary Doctor - Established Patient - Minimal Complexity', 3, 42, 52),
-    (7, 'Office Visit - Primary Doctor - Established Patient - Moderate Complexity', 3, 145, 188),
-    (8, 'Services Office Visit - Primary Doctor - Established Patient - High Complexity', 4, 302, 377),
-    (9, 'Office Visit - Primary Doctor - Established Patient - Minimal Complexity', 5, 42, 52),
-    (10, 'Office Visit - Primary Doctor - Established Patient - Moderate Complexity', 6, 145, 188),
-    (11, 'Office Visit - Primary Doctor - New Patient - High Complexity', 6, 420, 550);
+INSERT INTO services(service, doctor_id, minimum_cost, maximum_cost)
+	VALUES ('Services Office Visit - Primary Doctor - Established Patient - High Complexity', 2, 302, 377),
+	( 'Office Visit - Primary Doctor - Established Patient - Minimal Complexity', 2, 42, 52),
+	( 'Office Visit - Primary Doctor - Established Patient - Moderate Complexity', 2, 145, 188),
+	( 'Office Visit - Primary Doctor - New Patient - High Complexity', 2, 420, 550),
+	( 'Services Office Visit - Primary Doctor - Established Patient - High Complexity', 3, 302, 377),
+  ( 'Office Visit - Primary Doctor - Established Patient - Minimal Complexity', 3, 42, 52),
+  ( 'Office Visit - Primary Doctor - Established Patient - Moderate Complexity', 3, 145, 188),
+  ( 'Services Office Visit - Primary Doctor - Established Patient - High Complexity', 4, 302, 377),
+  ( 'Office Visit - Primary Doctor - Established Patient - Minimal Complexity', 5, 42, 52),
+  ( 'Office Visit - Primary Doctor - Established Patient - Moderate Complexity', 6, 145, 188),
+  ( 'Office Visit - Primary Doctor - New Patient - High Complexity', 6, 420, 550);
 
 # --- !Downs
 
